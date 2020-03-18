@@ -3,8 +3,8 @@ def solution(A):
 	diff = []
 
 	# P = 1, difference = (13 - 3) - 3
-	# P = 2, difference = (13 - (3 + 1) - (3 + 1)
-	# P = 2, difference = (13 - (3 + 1 + 2) - (3 + 1 + 2)
+	# P = 2, difference = (13 - (3 + 1)) - (3 + 1)
+	# P = 2, difference = (13 - (3 + 1 + 2)) - (3 + 1 + 2)
 	tmp = 0
 	for elem in A[:-1]:
 		tmp += elem
