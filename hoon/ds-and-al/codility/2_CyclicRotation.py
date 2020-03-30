@@ -19,6 +19,13 @@ def solution(A, K):
 		result[rotated] = elem
 
 	return result
+
+def solution(A, K):
+    n = len(A)
+    if n == 0:
+        return A
+    k = K % n
+    return A[n-k:] + A[:n-k]
     
 if __name__ == '__main__':
 	print(solution([3, 8, 9, 7, 6], 48))
